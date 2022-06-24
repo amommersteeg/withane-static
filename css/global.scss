@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
+
+@font-face {
+    font-family: 'Facultad';
+    src: url('../fonts/Facultad-Regular.otf');
+}
+
+$colors:(primary:#2A296A,
+    secondary:#4e4e4e,
+    secondary-light:lighten(#4e4e4e, 40%),
+    white:#fff,
+    accent: #FFA69E,
+);
+
+$fonts: (primary:'Signika',
+    secondary:'Facultad',
+);
+
+@function font($fonts-name) {
+    @return map-get($fonts, $fonts-name);
+}
+
+@function color($colors-name) {
+    @return map-get($colors, $colors-name);
+}
+
+$desktop: 950px;
+$desktop-sm: 750px;
+$tablet: 600px;
+$phone: 599px;
+
+@mixin phone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin desktop-sm {
+    @media screen and (min-width: $desktop-sm) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin text-white {
+    color: white;
+  }
+  
+
+:root {
+    --swiper-navigation-size: 24px;
+    --swiper-theme-color: black;
+}
+
+body,
+html {
+    font-family: font(primary);
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 2px;
+    background-color: color(white);
+    color: color(primary);
+    margin: 0;
+
+    h1 {
+        font-family: font(secondary);
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    a {
+        font-family: font(secondary);
+        font-size: 1.125rem !important;
+        text-decoration: none;
+        color: inherit;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    p,
+    li {
+        font-size: 1.25rem;
+    }
+
+    p{
+        line-height: 1.75;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    ol,
+    ul{
+        padding:0;
+        li{
+            margin-bottom: .75rem;
+            line-height: 1.25;
+        }
+    }
+
+    blockquote{
+        font-family: font(primary);
+        font-size: 1.25em;
+    }
+
+    figure{
+        margin: 30px auto;
+
+        figcaption {
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.25;
+            margin-top: 0;
+        }
+    }
+
+
+    @include tablet {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 1.75rem;
+        }
+
+        p, 
+        li {
+            font-size: 1.75rem;
+        }
+
+        a {
+            font-size: 1.5rem !important;
+        }
+
+        blockquote{
+            font-size: 2.25rem;
+        }
+    }
+
+    @include desktop {
+        h1 {
+            font-size: 4rem;
+
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
+        p,
+        li {
+            font-size: 2rem;
+        }
+
+        a {
+            font-size: 1.85rem !important;
+        }
+
+
+        blockquote{
+            font-size: 2.75rem;
+        }
+
+        figure{
+    
+            figcaption {
+                font-size: 1.25rem;
+
+            }
+        }
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    
+}
+
+.bg-white{
+    background-color: color(white);
+
+    p{
+        padding: 2rem 1rem;
+    }
+}
+
+// .content__button {
+//     display: none;
+
+//     &:before,
+//     &:after {
+//         position: absolute;
+//         left: 15px;
+//         bottom: 2px;
+//         content: ' ';
+//         height: 33px;
+//         width: 2px;
+//         background-color: color(white);
+//     }
+
+//     &:before {
+//         transform: rotate(45deg);
+//     }
+
+//     &:after {
+//         transform: rotate(-45deg);
+//     }
+// }
+
+.mb-2{
+    margin-bottom: 2rem !important;
+}
+
+.mb-10{
+    margin-bottom: 10rem !important; 
+}
+
+.mt-2{
+    margin-top: 2rem !important;
+}

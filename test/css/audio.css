@@ -1,0 +1,31 @@
+.placeholder-header {
+  width: 100%;
+  height: 400px;
+  background-color: lightgreen;
+}
+
+.placeholder-content {
+  width: 100%;
+  height: 1000px;
+  background-color: lightpink;
+}
+
+.audio-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 30px;
+  height: 20px;
+  background-color: mediumslateblue;
+}
+
+.audio-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=audio.css.map */

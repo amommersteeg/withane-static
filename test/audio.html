@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with an e Design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/audio.css">
+</head>
+
+<body>
+    <div class="placeholder-header"></div>
+    <div class="audio-container">
+        <audio id="audio-src">
+            <source src="/audio/example.ogg" type="audio/ogg">
+            <source src="/audio/example.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="audio-controls">
+            <button class="audio-controls-play"><i class="fas fa-play"></i></button>  <!--<i class="fas fa-pause"></i> -->
+            <input type="range" class="audio-controls-time" min="0" max="100" value="0">
+            <button class="audio-controls-mute"><i class="fas fa-volume-up"></i></button>  <!--<i class="fas fa-volume-off"></i> -->
+        </div>
+    </div>
+    <div class="placeholder-content"></div>
+
+    <script src="/js/audio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+[
+    {
+        "title": "A digital instrument for music therapy",
+        "subtitle": "The Bumblebeat",
+        "cardImg": "/img/thumb-01-01.jpg",
+        "url": "01-bumblebeat.html",
+        "tag": "case",
+        "show": true
+    },
+    {
+        "title": "A course development toolbox",
+        "subtitle": "Lemon-aid Stand",
+        "cardImg": "/img/thumb-02-01.jpg",
+        "url": "02-lemonaid-stand.html",
+        "tag": "case, ui-ux",
+        "show": true
+    },
+    {
+        "title": "",
+        "subtitle": "pario",
+        "cardImg": "/img/thumb-03-01.jpg",
+        "url": "03-pario.html",
+        "tag": "artwork",
+        "show": true
+    },
+    {
+        "title": "Artist-in-Residence Posters",
+        "subtitle": "Series",
+        "cardImg": "/img/thumb-05-01.jpg",
+        "url": "05-artist-in-residence.html",
+        "tag": "graphic",
+        "show": true
+    },
+    {
+        "title": "Personal webapp for meal planning",
+        "subtitle": "Groundhog Grub",
+        "cardImg": "/img/thumb-06-01.jpg",
+        "url": "06-groundhog-grub.html",
+        "tag": "case",
+        "show": false
+    },
+    {
+        "title": "Team-building for Team Work",
+        "subtitle": "Thoughts and Ideas",
+        "cardImg": "/img/thumb-team-building.jpg",
+        "url": "team-building.html",
+        "tag": "narrative",
+        "show": true
+    }
+
+]

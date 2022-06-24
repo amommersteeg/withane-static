@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,MAAM;CAClB",
+    "sources": [
+        "lab.scss"
+    ],
+    "names": [],
+    "file": "lab.css"
+}

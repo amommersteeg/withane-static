@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2"
+  },
+  "name": "contact_form",
+  "version": "0.0.0",
+  "description": "A simple contact form backend using nodemailer and express",
+  "main": "index.js",
+  "scripts": {   
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

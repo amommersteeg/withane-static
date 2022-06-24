@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap");
+@font-face {
+  font-family: 'Facultad';
+  src: url("../fonts/Facultad-Regular.otf");
+}
+
+:root {
+  --swiper-navigation-size: 24px;
+  --swiper-theme-color: black;
+}
+
+body,
+html {
+  font-family: "Signika";
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: #2A296A;
+  margin: 0;
+}
+
+body h1,
+html h1 {
+  font-family: "Facultad";
+  font-size: 2.25rem;
+}
+
+body h2,
+html h2 {
+  font-size: 2rem;
+}
+
+body h3,
+html h3 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+body h4,
+html h4 {
+  font-size: 1rem;
+}
+
+body a,
+html a {
+  font-family: "Facultad";
+  font-size: 1.125rem !important;
+  text-decoration: none;
+  color: inherit;
+}
+
+body a:visited,
+html a:visited {
+  color: inherit;
+}
+
+body p,
+body li,
+html p,
+html li {
+  font-size: 1.25rem;
+}
+
+body p,
+html p {
+  line-height: 1.75;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+body ol,
+body ul,
+html ol,
+html ul {
+  padding: 0;
+}
+
+body ol li,
+body ul li,
+html ol li,
+html ul li {
+  margin-bottom: .75rem;
+  line-height: 1.25;
+}
+
+body blockquote,
+html blockquote {
+  font-family: "Signika";
+  font-size: 1.25em;
+}
+
+body figure,
+html figure {
+  margin: 30px auto;
+}
+
+body figure figcaption,
+html figure figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  body h1,
+  html h1 {
+    font-size: 3rem;
+  }
+  body h3,
+  html h3 {
+    font-size: 1.75rem;
+  }
+  body p,
+  body li,
+  html p,
+  html li {
+    font-size: 1.75rem;
+  }
+  body a,
+  html a {
+    font-size: 1.5rem !important;
+  }
+  body blockquote,
+  html blockquote {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  body h1,
+  html h1 {
+    font-size: 4rem;
+  }
+  body h3,
+  html h3 {
+    font-size: 2rem;
+  }
+  body p,
+  body li,
+  html p,
+  html li {
+    font-size: 2rem;
+  }
+  body a,
+  html a {
+    font-size: 1.85rem !important;
+  }
+  body blockquote,
+  html blockquote {
+    font-size: 2.75rem;
+  }
+  body figure figcaption,
+  html figure figcaption {
+    font-size: 1.25rem;
+  }
+}
+
+body button,
+html button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-white p {
+  padding: 2rem 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 10rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container p.alt,
+.container h2.alt,
+.container h3.alt,
+.container h4.alt {
+  font-family: "Facultad";
+}
+
+.container h2,
+.container h3,
+.container h4 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.container ol,
+.container ul {
+  margin: 1rem 20px;
+}
+
+.container ul.dash {
+  list-style-type: none;
+}
+
+.container ul.dash > li {
+  text-indent: -10px;
+}
+
+.container ul.dash > li:before {
+  content: "-  ";
+}
+
+.container blockquote {
+  margin: 1rem 0;
+}
+
+.container blockquote.alt {
+  padding: 0 20px;
+}
+
+.container .emphasis {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.container .callout {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  background-color: #2A296A;
+  color: white;
+}
+
+.container .callout p,
+.container .callout h3,
+.container .callout ul {
+  margin: 20px;
+}
+
+.container .callout ul {
+  margin-left: 35px;
+}
+
+.container .callout .emphasis {
+  margin-top: 1rem;
+}
+
+.container .callout.alt {
+  background-color: #4e4e4e;
+}
+
+.container .getInto {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.container img {
+  width: 100%;
+  margin: 1rem auto;
+  margin-bottom: .75rem;
+  height: auto;
+}
+
+.container .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .intro-details {
+  display: none;
+}
+
+.container .flex-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .flex-around p {
+  margin: 0;
+}
+
+.container .flex-around figure {
+  width: 100%;
+}
+
+.password {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  z-index: 80;
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.password-modal {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 35px;
+  padding-top: 200px;
+  background-color: #fff;
+  filter: unset;
+  -webkit-filter: unset;
+  z-index: 81;
+}
+
+.password-modal input {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.password-modal button {
+  font-size: 1.5rem;
+  padding: 3px 6px;
+  border: 1px solid #2A296A;
+  color: #2A296A;
+  overflow: hidden;
+}
+
+.password-modal button:active {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #2A296A;
+}
+
+.footer {
+  width: 100%;
+  margin: 0;
+  background-color: #b4b4b4;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  height: 150px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-content a {
+  text-decoration: none;
+}
+
+.footer-content a:visited {
+  text-decoration: none;
+}
+
+.footer-content h2 {
+  display: inherit;
+  text-decoration: none;
+  color: #4e4e4e;
+  margin: 0 20px;
+}
+
+.footer-image {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80%;
+  display: none;
+}
+
+.footer-image:nth-of-type(odd) {
+  margin: 10px;
+}
+
+.footer-image img {
+  height: 100%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 750px;
+    padding: 0 40px;
+  }
+  .container .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .flex-around {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  blockquote.alt {
+    font-size: 1.75rem;
+  }
+  .password-modal {
+    max-width: 400px;
+    height: auto;
+    margin: 20% auto;
+    padding-top: 35px;
+  }
+  .password-modal input {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .footer-image:nth-of-type(1) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 1200px;
+  }
+  .container p,
+  .container h2,
+  .container h3,
+  .container h4 {
+    margin-right: 200px;
+  }
+  .container ol,
+  .container ul {
+    margin-left: 75px;
+    margin-right: 200px;
+  }
+  .footer-image:nth-of-type(2) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .container .emphasis {
+    font-size: 2.5rem;
+    line-height: 1.25;
+  }
+  .container blockquote.alt {
+    font-size: 2rem;
+  }
+  .container .callout {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container .callout p,
+  .container .callout h3 {
+    margin-left: 50px;
+    margin-right: 200px;
+  }
+  .container .callout .emphasis {
+    margin-top: 5rem;
+  }
+  .container .intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-bottom: 25px;
+  }
+  .container .intro h1 {
+    margin-top: 10px;
+  }
+  .container .intro .img-div {
+    width: 60%;
+  }
+  .container .intro-content {
+    width: 40%;
+  }
+  .container .intro-details {
+    display: inherit;
+  }
+  .container .intro-details h3 {
+    margin-top: 20px;
+  }
+  .container .intro-details p,
+  .container .intro-details h3 {
+    margin-right: 15px;
+    font-size: 1.25rem;
+    line-height: 1.25;
+  }
+  .container .intro.intro-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .flex-around {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 10rem;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container .flex-around figure {
+    width: 45%;
+  }
+  .container .flex-around p {
+    width: 45%;
+  }
+  .footer-image:nth-of-type(3) {
+    display: block;
+  }
+}
+/*# sourceMappingURL=cases.css.map */

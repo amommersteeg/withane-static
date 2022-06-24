@@ -1,0 +1,46 @@
+.app{
+    &-container{
+    }
+}
+
+.filter{
+    
+    &-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+    &-item{
+        padding-right: 20px;
+    }
+
+}
+
+.list{
+    &-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &-item{
+        margin: 20px;
+        a{
+            display: block;
+            height: 200px;
+            width: 200px;
+            background-color: lightgray;
+            border: 1px black solid;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        &-hidden{
+            display: none;
+        }
+    }
+}

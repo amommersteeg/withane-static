@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with an e Design</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <base href="/portfolio/" target="_self">
+</head>
+
+<body>
+    <div class="app-container">
+        <ul class="filter-container" id='filter'>
+            <li class="filter-item">
+                <label for="ux-ui-filter">
+                    <input id="ux-ui-filter" type="checkbox">
+                    UX/UI
+                </label>
+            </li>
+            <li class="filter-item">
+                <label for="product-filter">
+                    <input id="product-filter" type="checkbox">
+                    Product
+                </label>
+            </li>
+            <li class="filter-item">
+                <label for="graphic-filter">
+                    <input id="graphic-filter" type="checkbox">
+                    Graphic
+                </label>
+            </li>
+            <li class="filter-item">
+                <label for="art-filter">
+                    <input id="art-filter" type="checkbox">
+                    Art
+                </label>
+            </li>
+            <li class="filter-item">
+                <label for="all-filter">
+                    <input id="all-filter" type="checkbox" checked>
+                    All
+                </label>
+            </li>
+        </ul>
+        <ul class="list-container" id='list'>
+            <li data-tag='art' class="list-item">
+                <a href="art1">Art</a>
+            </li>
+            <li data-tag='ux-ui' class="list-item">
+                <a href="ux-ui1">UX-UI</a>
+            </li>
+            <li data-tag='graphic' class="list-item">
+                    <a href="graphic1">Graphic</a>
+            </li>
+            <li data-tag='product' class="list-item">
+                <a href="product1">Product</a>
+            </li>
+            <li data-tag='graphic' class="list-item">
+                <a href="graphic2">Graphic</a>
+            </li>
+            <li data-tag='ux-ui' class="list-item">
+                <a href="ux-ui2">UI/UX</a>
+            </li>
+            
+            <li data-tag='art' class="list-item">
+                <a href="art2">Art</a>
+            </li>
+            <li data-tag='art' class="list-item">
+                <a href="art3">Art</a>
+            </li>
+            <li data-tag='product' class="list-item">
+                <a href="product2">Product</a>
+            </li>
+            <li data-tag='graphic' class="list-item">
+                <a href="graphic3">Graphic</a>
+            </li>
+            <li data-tag='ux-ui' class="list-item">
+                <a href="ux-ui3">UI/UX</a>
+            </li>
+        </ul>
+    </div>
+
+   <script src="/js/filter.js"></script>
+</body>
+
+</html>
